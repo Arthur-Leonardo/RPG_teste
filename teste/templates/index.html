@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aaaaa</title>
+    <link rel="stylesheet" href="{{url_for('static', path='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/game.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/ui.css')}}">
+</head>
+<body>
+    <div class="game-container"></div>
+    <div class="ui-container">
+
+        <!--User Panel-->
+        {% include 'ui/user_panel.html' %}
+
+        <!--Selected Enemy-->
+        {% include 'ui/enemy_panel.html' %}
+
+    </div>
+</body>
+</html>
